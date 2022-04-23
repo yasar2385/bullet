@@ -1,0 +1,48 @@
+h1,
+h2 {
+  font-family: Lato;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul[data-label-simple] li::before {
+  content: attr(data-label-simple) ' ';
+  left: -1em;
+}
+:root {
+  --label: 'dei suuuuummmmmaaaa eerrrrruuudddddaaaawwwwww';
+}
+div.foo[data-index] .heading::before {
+  content: var(--label) ' ';
+  color: red;
+  /* border: 1px solid red; */
+}
+
+/* ol list-type="simple" style="--lable: '-'" */
+
+[list-type='simple'] list-item::before {
+  content: var(--label) ' ';
+  color: red;
+
+  /* border: 1px solid red; */
+}
+list-item {
+  display: block;
+}
+list-item p {
+  display: inline;
+}
+
+.list-item[data-label-simple] {
+  background-color: #d4a606;
+  display: block;
+}
+.list-item[data-label-simple]::before {
+  content: attr(data-label-simple) ' ';
+}
+
+.list-item .p {
+  display: inline;
+}
