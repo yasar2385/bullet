@@ -7,42 +7,14 @@ ul {
   list-style-type: none;
 }
 
-ul[data-label-simple] li::before {
-  content: attr(data-label-simple) ' ';
-  left: -1em;
+a::before {
+  content: '\\1F517 ';
 }
-:root {
-  --label: 'dei suuuuummmmmaaaa eerrrrruuudddddaaaawwwwww';
-}
-div.foo[data-index] .heading::before {
-  content: var(--label) ' ';
-  color: red;
-  /* border: 1px solid red; */
+a::after {
+  content: ' (' attr(href) ')';
 }
 
-/* ol list-type="simple" style="--lable: '-'" */
-
-[list-type='simple'] list-item::before {
-  content: var(--label) ' ';
-  color: red;
-
-  /* border: 1px solid red; */
-}
-list-item {
-  display: block;
-}
-list-item p {
-  display: inline;
-}
-
-.list-item[data-label-simple] {
-  background-color: #d4a606;
-  display: block;
-}
-.list-item[data-label-simple]::before {
-  content: attr(data-label-simple) ' ';
-}
-
-.list-item .p {
-  display: inline;
+li[data-label-simple='25CB']::before {
+  content: '\25cb';
+  margin-left: -.815em;
 }
