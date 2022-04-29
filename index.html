@@ -1,19 +1,27 @@
 <div id="app"></div>
 
 <ul class="foo">
-  <li class="" data-label-simple="25CB">
+  <li class="simple" data-label-simple="25CB">
     I believe social change needs to be at the center of our economic systems,
     not the margins.
   </li>
 </ul>
-
+<ul id="myDiv" list-type="simple" data-label-simple="■">
+  <li data-label-simple="-">Coffee</li>
+  <li data-label-simple="■">Tea</li>
+  <li data-label-simple="•">
+    Milk
+    <ul class="foo">
+      <li class="simple" data-label-simple="○">
+        I believe social change needs to be at the center of our economic
+        systems, not the margins.
+      </li>
+    </ul>
+  </li>
+</ul>
 <!-- 
 
-  <ul list-type="simple" data-label-simple="-">
-  <li data-label-simple="-">Coffee</li>
-  <li data-label-simple="-">Tea</li>
-  <li data-label-simple="-">Milk</li>
-</ul>
+
 
 <div class="background" data-background="lime">
   background expected to be red if your browser does not support advanced usage

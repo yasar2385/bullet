@@ -13,8 +13,14 @@ a::before {
 a::after {
   content: ' (' attr(href) ')';
 }
-
-li[data-label-simple='25CB']::before {
+ul[data-label-simple] li::before {
+  content: attr(data-label-simple) ' ';
+  left: -1em;
+}
+/* li[data-label-simple='25CB']::before {
   content: '\25cb';
   margin-left: -.815em;
+} */
+li[bg]{
+  background-color: red;;
 }
